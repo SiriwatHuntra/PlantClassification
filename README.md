@@ -19,7 +19,10 @@ This repository contains the public version of a plant classification project ba
 ## 📁 Folder Structure
 
 Your input folder should contain subfolders named after plant classes. For example:
-Plant_Image/ ├── Class_A/ ├── Class_B/
+
+**Plant_Image/ 
+***├── Class_A/ 
+***├── Class_B/
 
 
 Feature extraction will automatically label samples based on these subfolder names.
