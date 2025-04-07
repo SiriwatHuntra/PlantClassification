@@ -12,9 +12,9 @@ Pubic version, no webapp part included
 
 # File structure
 In input folder path should contain with sub folder inside for sameple: 
--Plant_Image
---→Class_A
-              --> Class_B
+  -Plant_Image
+  -- →Class_A
+  -- →Class_B
 Output of feature extraction will automatic labeling by sub folder names
   
 # Python File
