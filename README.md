@@ -1,32 +1,57 @@
-# PlantClassification
-This is my project: leaf image base plant classificatin.<br/>
-Pubic version, no webapp part included.<br/>
+# 🌿 PlantClassification
 
-# Flow 
-  - Image Read.
-  - Image Processing: feature vector extraction.
-  - Port data into CSV file.
-  - Data Visualization.
-  - Model Making with Model selection/Comparation.
-  - Model evaluation.
+**Leaf Image-Based Plant Classification**  
+This repository contains the public version of a plant classification project based on leaf images. The web application components are not included.
 
-# File structure
-In input folder path should contain with sub folder inside for sameple:<br/>
-  -Plant_Image<br/>
-  -→Class_A<br/>
-  -→Class_B<br/>
-Output of feature extraction will automatic labeling by sub folder names.
-  
-# Python File
-  -Extract<br/>
-    -_ExtractionToCSV.py: Model Feature Extraction Pipeline, Input should be folder and it will return with CSV file.<br/>
-    -Feature.py: Feature vector extractor.<br/>
-  -Util<br/>
-    -BG_remove.py: Call Segment function to remove bg, input and out put is folder path.<br/>
-                  Usage sample is in "Image_segmentation.py".<br/>
-    -Image_IO.py: incude with file IO and other utility function such as file format converter.<br/>
-  -Image_Segmentation.py: Main file to call functuion from Util folders.<br/>
-  -MakeModel.py: Make, Compare and select model for usage, include with model auto fine tune and evaluation.<br/>
-  -NoiseAdding.py: Use for add noise into photo dataset.<br/>
-  -RobustTest.py: Compare how efficient and accuracy of model on noisy dataset that generate from NoiseAdding.py.<br/>
-  -Visual.py: use for visualize CSV data with Box plot and data overview.<br/>
+---
+
+## 🔁 Project Workflow
+
+1. **Image Reading**
+2. **Image Processing & Feature Extraction** – Extract various features from each image to create a feature vector.
+3. **Export to CSV** – Feature vectors are saved into a structured CSV file.
+4. **Data Visualization** – Visualize features for exploration and understanding.
+5. **Model Building & Comparison** – Train models, compare performance, and select the best.
+6. **Model Evaluation** – Evaluate model robustness and accuracy.
+
+---
+
+## 📁 Folder Structure
+
+Your input folder should contain subfolders named after plant classes. For example:
+Plant_Image/ ├── Class_A/ ├── Class_B/
+
+
+Feature extraction will automatically label samples based on these subfolder names.
+
+---
+
+## 🐍 Python Files Overview
+
+### 🔍 Feature Extraction
+- `Extract/_ExtractionToCSV.py`  
+  → Main pipeline for feature extraction. Input is a folder path; output is a CSV file.  
+- `Extract/Feature.py`  
+  → Contains all feature extraction functions.
+
+### ⚙️ Utilities
+- `Util/BG_remove.py`  
+  → Removes background using segmentation. Sample usage in `Image_Segmentation.py`.  
+- `Util/Image_IO.py`  
+  → Handles image I/O and utilities like file format conversion.
+
+### 🖼️ Image Segmentation
+- `Image_Segmentation.py`  
+  → Main script to perform background removal using utility functions.
+
+### 🧠 Model Creation & Testing
+- `MakeModel.py`  
+  → Builds and compares models. Includes automated model fine-tuning and evaluation.  
+- `NoiseAdding.py`  
+  → Adds artificial noise to images to test model robustness.  
+- `RobustTest.py`  
+  → Evaluates model performance on noisy datasets.
+
+### 📊 Visualization
+- `Visual.py`  
+  → Generates visualizations such as box plots to understand data distribution.
