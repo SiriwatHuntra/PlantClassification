@@ -11,7 +11,7 @@ Pubic version, no webapp part included
   - Model evaluation
 
 # File structure
-In input folder path should contain with sub folder inside for sameple: 
+In input folder path should contain with sub folder inside for sameple:<br/>
   -Plant_Image
   -- →Class_A
   -- →Class_B
