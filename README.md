@@ -25,7 +25,7 @@ Your input folder should contain subfolders named after plant classes. For examp
   ├── Class_B<br/>
   ├── Class_C<br/>
 
-Feature extraction will automatically label samples based on these subfolder names.
+Feature extraction will label samples based on these subfolder names.
 
 ---
 
