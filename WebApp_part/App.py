@@ -12,7 +12,7 @@ from flask import request
 
 
 app = Flask(__name__, template_folder='template')
-app.secret_key = "your-secret-key_1260"
+app.secret_key = "your-secret-key"
 
 # Initialize Firebase
 cred,_, db = initialize_firebase_admin()  # For Firestore operations
