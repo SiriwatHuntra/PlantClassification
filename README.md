@@ -19,6 +19,7 @@ This repository contains the public version of a plant classification project ba
 ## 📁 Folder Structure
 
 Your input folder should contain subfolders named after plant classes. For example:
+
   Plant_Image/<br/>
   ├── Class_A<br/>
   ├── Class_B<br/>
