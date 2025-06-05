@@ -1,11 +1,13 @@
 # 🌿 PlantClassification
 
 **Leaf Image-Based Plant Classification**  
-This repository contains the public version of a plant classification project based on leaf images. The web application components are not included.
- * Web-app not included
+This repository contains the public version of a plant classification project based on leaf images.
+this project divided into 2 parts:
+ * Image processing with Model making
+ * Web-app part for being sample how to use produced model. 
 ---
 
-## 🔁 Project Workflow
+## 🔁 Image processing and Model making Workflow
 
 1. **Image Reading**
 2. **Image Processing & Feature Extraction** – Extract various features from each image to create a feature vector.
