@@ -2,7 +2,7 @@
 
 **Leaf Image-Based Plant Classification**  
 This repository contains the public version of a plant classification project based on leaf images. The web application components are not included.
-
+ * Web-app not included
 ---
 
 ## 🔁 Project Workflow
