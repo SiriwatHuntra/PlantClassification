@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center min-h-screen">
+    <header class="bg-indigo-600 text-white w-full py-4 flex justify-between items-center px-8">
+        <div>
+            <h1 class="text-xl font-bold">Welcome, {{ username }}!</h1>
+            <p>{{ email }}</p>
+            <p>Current Role: {{ role }}</p>
+
+        </div>
+        <div class="flex space-x-4">
+            <a href="{{ url_for('home') }}" class="text-white hover:text-gray-200">Home</a>
+            <a href="{{ url_for('gallery') }}" class="text-white hover:text-gray-200">Gallery</a>
+            <form action="{{ url_for('logout') }}" method="POST" class="inline">
+                <button type="submit" class="bg-red-500 hover:bg-red-600 text-white py-1 px-4 rounded">
+                    Logout
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main class="mt-8 w-full max-w-7xl space-y-8 px-4 lg:px-0">
+        <section class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-xl font-bold text-center">Gallery</h2>
+
+            {% if logs %}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                {% for log in logs %}
+                <div class="bg-gray-50 shadow rounded-lg p-4 flex flex-col items-center">
+                    <img src="{{ log['path'] }}" alt="Uploaded Image" class="h-48 w-48 object-cover rounded-lg mb-4">
+                    <p class="text-sm text-gray-700"><strong>Uploaded:</strong> {{ log['upload_time'] }}</p>
+                    <p class="text-sm text-gray-700"><strong>Classification:</strong> {{ log['classification'] }}</p>
+                    <form method="POST" action="{{ url_for('delete_image', image_uid=log['image_uid']) }}" class="mt-4">
+                        <button type="submit" class="bg-red-500 hover:bg-red-600 text-white py-1 px-4 rounded">
+                            Delete
+                        </button>
+                    </form>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="text-gray-500 text-center mt-6">No images found.</p>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>

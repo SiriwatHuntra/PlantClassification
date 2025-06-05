@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center min-h-screen">
+    <header class="bg-indigo-600 text-white w-full py-4 flex justify-between items-center px-8">
+        <h1 class="text-xl font-bold">Admin Panel</h1>
+        <p>Current Role: {{ role }}</p>
+
+        <div class="flex space-x-4">
+            <a href="{{ url_for('home') }}" class="text-white hover:text-gray-200">Home</a>
+            <form action="{{ url_for('logout') }}" method="POST" class="inline">
+                <button type="submit" class="bg-red-500 hover:bg-red-600 text-white py-1 px-4 rounded">
+                    Logout
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main class="mt-8 w-full max-w-7xl space-y-8 px-4 lg:px-0">
+        <section class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-xl font-bold text-center">User List</h2>
+
+            {% if users %}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                {% for user in users %}
+                <div class="bg-gray-50 shadow rounded-lg p-4 flex flex-col items-center">
+                    <p class="text-lg font-bold">{{ user['user_name'] }}</p>
+                    <p class="text-sm text-gray-700">{{ user['email'] }}</p>
+                    <p class="text-sm text-gray-500">Role: {{ user['role'] }}</p>
+                    <a href="{{ url_for('admin_user_details', user_id=user['id']) }}" 
+                        class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-1 px-4 rounded">View Details
+                    </a>
+
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p class="text-gray-500 text-center mt-6">No users found.</p>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>

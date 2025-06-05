@@ -1,0 +1,162 @@
+{
+    "1": {
+        "scientific_name": "Phyllostachys edulis (Carr.) Houz.",
+        "common_name": "Pubescent Bamboo",
+        "detail": "A fast-growing bamboo species widely used in construction, furniture, and as a food source (bamboo shoots)."
+    },
+    "2": {
+        "scientific_name": "Aesculus chinensis",
+        "common_name": "Chinese Horse Chestnut",
+        "detail": "A deciduous tree known for its showy white flowers and large, toxic seeds often used in traditional medicine."
+    },
+    "3": {
+        "scientific_name": "Berberis anhweiensis Ahrendt",
+        "common_name": "Anhui Barberry",
+        "detail": "A small shrub with spiny branches and bright red berries, commonly used in ornamental gardens."
+    },
+    "4": {
+        "scientific_name": "Cercis chinensis",
+        "common_name": "Chinese Redbud",
+        "detail": "A beautiful ornamental tree that produces vibrant pink flowers along its branches in early spring."
+    },
+    "5": {
+        "scientific_name": "Indigofera tinctoria L.",
+        "common_name": "True Indigo",
+        "detail": "A plant historically cultivated for its deep blue dye, which has been used in textiles for centuries."
+    },
+    "6": {
+        "scientific_name": "Acer palmatum",
+        "common_name": "Japanese Maple",
+        "detail": "A popular ornamental tree with deeply lobed leaves that turn brilliant red or orange in autumn."
+    },
+    "7": {
+        "scientific_name": "Phoebe nanmu (Oliv.) Gamble",
+        "common_name": "Nanmu",
+        "detail": "A valuable hardwood tree known for its fragrant wood, historically used in Chinese architecture and furniture."
+    },
+    "8": {
+        "scientific_name": "Kalopanax septemlobus (Thunb. ex A.Murr.) Koidz.",
+        "common_name": "Castor Aralia",
+        "detail": "A deciduous tree with large, lobed leaves and sharp spines on its branches, often used as a street tree."
+    },
+    "9": {
+        "scientific_name": "Cinnamomum japonicum Sieb.",
+        "common_name": "Chinese Cinnamon",
+        "detail": "An aromatic evergreen tree whose bark is used as a spice and for medicinal purposes."
+    },
+    "10": {
+        "scientific_name": "Koelreuteria paniculata Laxm.",
+        "common_name": "Goldenrain Tree",
+        "detail": "A small tree known for its bright yellow flowers and lantern-like seed pods."
+    },
+    "11": {
+        "scientific_name": "Ilex macrocarpa Oliv.",
+        "common_name": "Big-fruited Holly",
+        "detail": "A holly species producing large red berries, commonly used for decoration and attracting wildlife."
+    },
+    "12": {
+        "scientific_name": "Pittosporum tobira (Thunb.) Ait. f.",
+        "common_name": "Japanese Cheesewood",
+        "detail": "An evergreen shrub or small tree with fragrant flowers, often used in landscaping."
+    },
+    "13": {
+        "scientific_name": "Chimonanthus praecox L.",
+        "common_name": "Wintersweet",
+        "detail": "A deciduous shrub that blooms in winter, producing fragrant yellow flowers."
+    },
+    "14": {
+        "scientific_name": "Cinnamomum camphora (L.) J. Presl",
+        "common_name": "Camphor Tree",
+        "detail": "A large evergreen tree known for its aromatic leaves and medicinal uses."
+    },
+    "15": {
+        "scientific_name": "Viburnum awabuki K.Koch",
+        "common_name": "Japan Arrowwood",
+        "detail": "A dense, evergreen shrub with glossy leaves and clusters of white flowers."
+    },
+    "16": {
+        "scientific_name": "Osmanthus fragrans Lour.",
+        "common_name": "Sweet Osmanthus",
+        "detail": "A fragrant flowering plant whose tiny blossoms are used in teas and perfumes."
+    },
+    "17": {
+        "scientific_name": "Cedrus deodara (Roxb.) G. Don",
+        "common_name": "Deodar Cedar",
+        "detail": "A majestic coniferous tree with drooping branches, native to the Himalayas."
+    },
+    "18": {
+        "scientific_name": "Ginkgo biloba L.",
+        "common_name": "Ginkgo, Maidenhair Tree",
+        "detail": "A unique tree species with fan-shaped leaves, known for its medicinal and ornamental value."
+    },
+    "19": {
+        "scientific_name": "Lagerstroemia indica (L.) Pers.",
+        "common_name": "Crape Myrtle",
+        "detail": "A deciduous shrub or tree famous for its long-lasting, colorful summer blooms."
+    },
+    "20": {
+        "scientific_name": "Nerium oleander L.",
+        "common_name": "Oleander",
+        "detail": "A hardy evergreen shrub with toxic but attractive pink, red, or white flowers."
+    },
+    "21": {
+        "scientific_name": "Podocarpus macrophyllus (Thunb.) Sweet",
+        "common_name": "Yew Plum Pine",
+        "detail": "An evergreen tree with needle-like leaves, often used in hedges and bonsai."
+    },
+    "22": {
+        "scientific_name": "Prunus serrulata Lindl. var. lannesiana auct.",
+        "common_name": "Japanese Flowering Cherry",
+        "detail": "A beloved tree known for its stunning pink cherry blossoms in spring."
+    },
+    "23": {
+        "scientific_name": "Ligustrum lucidum Ait. f.",
+        "common_name": "Glossy Privet",
+        "detail": "A fast-growing tree with dark green leaves, commonly used in landscaping."
+    },
+    "24": {
+        "scientific_name": "Toona sinensis M. Roem.",
+        "common_name": "Chinese Toon",
+        "detail": "A tree valued for its edible young leaves, often used in Asian cuisine."
+    },
+    "25": {
+        "scientific_name": "Prunus persica (L.) Batsch",
+        "common_name": "Peach",
+        "detail": "A fruit tree producing juicy, sweet peaches, widely cultivated worldwide."
+    },
+    "26": {
+        "scientific_name": "Manglietia fordiana Oliv.",
+        "common_name": "Ford's Magnolia",
+        "detail": "A magnolia tree with large, fragrant flowers, native to China."
+    },
+    "27": {
+        "scientific_name": "Acer buergerianum Miq.",
+        "common_name": "Trident Maple",
+        "detail": "A small, ornamental tree with three-lobed leaves that turn vibrant colors in fall."
+    },
+    "28": {
+        "scientific_name": "Mahonia bealei (Fortune) Carr.",
+        "common_name": "Beale's Barberry",
+        "detail": "A shrub with holly-like leaves and yellow flowers, often grown for hedging."
+    },
+    "29": {
+        "scientific_name": "Magnolia grandiflora L.",
+        "common_name": "Southern Magnolia",
+        "detail": "A large evergreen tree with fragrant, white flowers and glossy leaves."
+    },
+    "30": {
+        "scientific_name": "Populus ×canadensis Moench",
+        "common_name": "Canadian Poplar",
+        "detail": "A fast-growing hybrid poplar tree often used for windbreaks and timber."
+    },
+    "31": {
+        "scientific_name": "Liriodendron chinense (Hemsl.) Sarg.",
+        "common_name": "Chinese Tulip Tree",
+        "detail": "A tree with distinct tulip-shaped flowers and large, lobed leaves."
+    },
+    "32": {
+        "scientific_name": "Citrus reticulata Blanco",
+        "common_name": "Tangerine",
+        "detail": "A small citrus tree producing sweet, easily peeled fruit."
+    }
+}

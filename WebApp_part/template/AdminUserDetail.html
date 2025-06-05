@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Additional styling for the "Back to Top" button */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center min-h-screen">
+    <!-- Header with Navigation Links -->
+    <header class="bg-indigo-600 text-white w-full py-4 flex justify-between items-center px-8">
+        <h1 class="text-xl font-bold">User Details - {{ user_data['user_name'] }}</h1>
+        <div class="flex space-x-4">
+            <a href="#user-details" class="text-white hover:text-gray-200">Details</a>
+            <a href="#image-logs" class="text-white hover:text-gray-200">Image Logs</a>
+            <a href="#login-logs" class="text-white hover:text-gray-200">Login Logs</a>
+            <a href="{{ url_for('admin_panel') }}" class="text-white hover:text-gray-200">Back to Admin Panel</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-8 w-full max-w-7xl space-y-8 px-4 lg:px-0">
+
+        <!-- User Details Section -->
+        <section id="user-details" class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-xl font-bold">User Details</h2>
+            <p>User Name: {{ user_data['user_name'] }}</p>
+            <p>Email: {{ user_data['email'] }}</p>
+            <p>Role: {{ user_data['role'] }}</p>
+        </section>
+
+        <!-- Image Logs Section -->
+        <section id="image-logs" class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-xl font-bold">Image Logs</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                {% for log in image_logs %}
+                <div class="bg-gray-50 shadow rounded-lg p-4">
+                    <img src="{{ log['path'] }}" alt="User Image" class="w-full rounded mb-2">
+                    <p>Uploaded: {{ log['upload_time'] }}</p>
+                    <p>Classification:
+                        {% for key, value in log['classification'].items() %}
+                            {{ key }}: {{ value }}
+                        {% endfor %}
+                    </p>
+                </div>
+                {% else %}
+                <p class="text-gray-500">No image logs found.</p>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- Login Logs Section -->
+        <section id="login-logs" class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-xl font-bold">Login Logs</h2>
+            <table class="w-full border-collapse border border-gray-300">
+                <thead>
+                    <tr>
+                        <th class="border border-gray-300 px-4 py-2">Timestamp</th>
+                        <th class="border border-gray-300 px-4 py-2">IP Address</th>
+                        <th class="border border-gray-300 px-4 py-2">Status</th>
+                        <th class="border border-gray-300 px-4 py-2">User Agent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for log in login_logs %}
+                    <tr>
+                        <td class="border border-gray-300 px-4 py-2">{{ log['timestamp'] }}</td>
+                        <td class="border border-gray-300 px-4 py-2">{{ log['ip_address'] }}</td>
+                        <td class="border border-gray-300 px-4 py-2">{{ log['status'] }}</td>
+                        <td class="border border-gray-300 px-4 py-2">{{ log['user_agent'] }}</td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="4" class="border border-gray-300 px-4 py-2 text-center">No login logs found.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="bg-indigo-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-indigo-700">
+        Back to Top
+    </button>
+
+    <!-- JavaScript for Back to Top Button -->
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+
+        // Show/hide the button based on scroll position
+        window.onscroll = () => {
+            if (document.documentElement.scrollTop > 200) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+
+        // Scroll to the top when the button is clicked
+        backToTopButton.onclick = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
